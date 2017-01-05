@@ -1,0 +1,162 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio --output-directory=/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system --report-file=bsf:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/soc_system.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system.qsys --remove-qsys-generate-warning
+Progress: Loading DE1_SOC_Linux_Audio/soc_system.qsys
+Progress: Reading input file
+Progress: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Progress: Parameterizing module alt_vip_itc_0
+Progress: Adding alt_vip_vfr_vga [alt_vip_vfr 14.0]
+Progress: Parameterizing module alt_vip_vfr_vga
+Progress: Adding audio_pll [altera_pll 14.1]
+Progress: Parameterizing module audio_pll
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 14.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding clock_bridge_44 [altera_clock_bridge 14.1]
+Progress: Parameterizing module clock_bridge_44
+Progress: Adding clock_bridge_48 [altera_clock_bridge 14.1]
+Progress: Parameterizing module clock_bridge_48
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Adding i2s_clkctrl_apb_0 [i2s_clkctrl_api 1.7]
+Progress: Parameterizing module i2s_clkctrl_apb_0
+Progress: Adding i2s_output_apb_0 [i2s_output_apb 1.4]
+Progress: Parameterizing module i2s_output_apb_0
+Progress: Adding pll_stream [altera_pll 14.1]
+Progress: Parameterizing module pll_stream
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: soc_system.alt_vip_vfr_vga: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_ram_fifo.vhd
+Info: soc_system.audio_pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Warning: soc_system.audio_pll: Able to implement PLL - Actual settings differ from Requested settings
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: soc_system.pll_stream: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: soc_system.pll_stream: Able to implement PLL with user settings
+Info: soc_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: soc_system.alt_vip_vfr_vga: Interrupt sender alt_vip_vfr_vga.interrupt_sender is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio --output-directory=/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis --file-set=QUARTUS_SYNTH --report-file=html:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/soc_system.html --report-file=sopcinfo:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system.sopcinfo --report-file=cmp:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/soc_system.cmp --report-file=qip:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/soc_system.qip --report-file=svd:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/soc_system.svd --report-file=regmap:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/soc_system.regmap --report-file=xml:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/soc_system.xml --report-file=debuginfo:/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/soc_system.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading DE1_SOC_Linux_Audio/soc_system.qsys
+Progress: Reading input file
+Progress: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Progress: Parameterizing module alt_vip_itc_0
+Progress: Adding alt_vip_vfr_vga [alt_vip_vfr 14.0]
+Progress: Parameterizing module alt_vip_vfr_vga
+Progress: Adding audio_pll [altera_pll 14.1]
+Progress: Parameterizing module audio_pll
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 14.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding clock_bridge_44 [altera_clock_bridge 14.1]
+Progress: Parameterizing module clock_bridge_44
+Progress: Adding clock_bridge_48 [altera_clock_bridge 14.1]
+Progress: Parameterizing module clock_bridge_48
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Adding i2s_clkctrl_apb_0 [i2s_clkctrl_api 1.7]
+Progress: Parameterizing module i2s_clkctrl_apb_0
+Progress: Adding i2s_output_apb_0 [i2s_output_apb 1.4]
+Progress: Parameterizing module i2s_output_apb_0
+Progress: Adding pll_stream [altera_pll 14.1]
+Progress: Parameterizing module pll_stream
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: soc_system.alt_vip_vfr_vga: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, /home/tank/altera/14.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_ram_fifo.vhd
+Info: soc_system.audio_pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Warning: soc_system.audio_pll: Able to implement PLL - Actual settings differ from Requested settings
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: soc_system.pll_stream: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: soc_system.pll_stream: Able to implement PLL with user settings
+Info: soc_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: soc_system.alt_vip_vfr_vga: Interrupt sender alt_vip_vfr_vga.interrupt_sender is not connected to an interrupt receiver
+Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master alt_vip_vfr_vga.avalon_master and slave hps_0.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src2 and cmd_mux_002.sink1
+Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+Info: Inserting clock-crossing logic between rsp_demux_002.src1 and rsp_mux_001.sink2
+Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: alt_vip_itc_0: "soc_system" instantiated alt_vip_itc "alt_vip_itc_0"
+Info: alt_vip_vfr_vga: "soc_system" instantiated alt_vip_vfr "alt_vip_vfr_vga"
+Info: audio_pll: "soc_system" instantiated altera_pll "audio_pll"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: i2s_clkctrl_apb_0: "soc_system" instantiated i2s_clkctrl_api "i2s_clkctrl_apb_0"
+Info: i2s_output_apb_0: "soc_system" instantiated i2s_output_apb "i2s_output_apb_0"
+Info: pll_stream: "soc_system" instantiated altera_pll "pll_stream"
+Info: sysid_qsys_0: "soc_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: alt_vip_vfr_vga_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "alt_vip_vfr_vga_avalon_master_translator"
+Info: alt_vip_vfr_vga_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "alt_vip_vfr_vga_avalon_master_agent"
+Info: hps_0_f2h_axi_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "hps_0_f2h_axi_slave_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: alt_vip_vfr_vga_avalon_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "alt_vip_vfr_vga_avalon_master_limiter"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: hps_0_f2h_axi_slave_wr_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "hps_0_f2h_axi_slave_wr_burst_adapter"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: i2s_output_apb_0_apb_slave_translator: "mm_interconnect_1" instantiated altera_merlin_apb_translator "i2s_output_apb_0_apb_slave_translator"
+Info: alt_vip_vfr_vga_avalon_slave_translator: "mm_interconnect_1" instantiated altera_merlin_slave_translator "alt_vip_vfr_vga_avalon_slave_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_1" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: i2s_output_apb_0_apb_slave_agent: "mm_interconnect_1" instantiated altera_merlin_apb_slave_agent "i2s_output_apb_0_apb_slave_agent"
+Info: alt_vip_vfr_vga_avalon_slave_agent: "mm_interconnect_1" instantiated altera_merlin_slave_agent "alt_vip_vfr_vga_avalon_slave_agent"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: alt_vip_vfr_vga_avalon_slave_agent_rsp_fifo: "mm_interconnect_1" instantiated altera_avalon_sc_fifo "alt_vip_vfr_vga_avalon_slave_agent_rsp_fifo"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_1" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file /home/tank/terasic/tmp/DE1-SoC-Sound-master/DE1_SOC_Linux_Audio/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: soc_system: Done "soc_system" with 41 modules, 136 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

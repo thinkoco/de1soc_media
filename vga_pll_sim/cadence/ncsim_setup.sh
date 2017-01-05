@@ -1,5 +1,5 @@
 
-# (C) 2001-2014 Altera Corporation. All rights reserved.
+# (C) 2001-2016 Altera Corporation. All rights reserved.
 # Your use of Altera Corporation's design tools, logic functions and 
 # other software and tools, and its AMPP partner logic functions, and 
 # any output files any of the foregoing (including device programming 
@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.1 162 win32 2014.03.20.14:06:51
+# ACDS 14.1 190 linux 2016.12.22.22:29:10
 
 # ----------------------------------------
 # ncsim - auto-generated simulation script
@@ -21,7 +21,7 @@
 # initialize variables
 TOP_LEVEL_NAME="vga_pll"
 QSYS_SIMDIR="./../"
-QUARTUS_INSTALL_DIR="D:/altera/13.1/quartus/"
+QUARTUS_INSTALL_DIR="/home/tank/altera/14.1/quartus/"
 SKIP_FILE_COPY=0
 SKIP_DEV_COM=0
 SKIP_COM=0
