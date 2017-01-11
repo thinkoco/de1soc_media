@@ -43,6 +43,7 @@ Open the Hardware project in de1soc_media
 
 	bsp-editor&
 According to the steps [Generating and Compiling the Preloader](https://rocketboards.org/foswiki/view/Documentation/GSRD131Preloader#Compiling_the_Preloader)
+
 3.make bsp and uboot
 
 	cd to 'project path'/software/spl_bsp/
